@@ -1,0 +1,36 @@
+{
+  "piece_id": "por-una-cabeza-feisi",
+  "stage_label": "note_learning",
+  "practice_count": 3,
+  "total_practice_minutes": 0,
+  "last_practiced_at": "2026-06-15T16:21:14.558218+00:00",
+  "best_stable_tempo_bpm": null,
+  "latest_tempo_bpm": null,
+  "recent_issue_patterns": [
+    "missed"
+  ],
+  "worst_measures": [
+    23,
+    25,
+    56
+  ],
+  "improving_measures": [],
+  "plateau_measures": [],
+  "last_three_scores": [
+    38.4,
+    37.8,
+    37.3
+  ],
+  "current_goal": "右手旋律慢速稳定",
+  "next_goal": "分手慢练第13、17、18小节，确认节奏和八度记号后再合手",
+  "last_feedback_digest": "用户希望先慢练右手旋律并检查八度记号；重点关注第13、17、18小节。",
+  "teacher_focus_tags": [
+    "right_hand",
+    "slow_practice",
+    "octave_shift",
+    "measure_13",
+    "measure_17",
+    "measure_18"
+  ],
+  "updated_at": "2026-06-15T16:21:47.435945+00:00"
+}

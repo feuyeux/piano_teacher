@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["piece_id", "stage_label", "next_goal"],
+  "properties": {
+    "piece_id": {"type": "string"},
+    "stage_label": {"type": "string"},
+    "next_goal": {"type": ["string", "null"]}
+  }
+}

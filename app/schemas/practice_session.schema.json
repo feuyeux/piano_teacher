@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["session_id", "piece_id", "session_status"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "piece_id": {"type": "string"},
+    "session_status": {"enum": ["created", "recording", "stopped", "analyzing", "completed", "failed"]}
+  }
+}

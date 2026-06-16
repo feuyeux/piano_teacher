@@ -1,0 +1,60 @@
+{
+  "pieces": [
+    {
+      "piece_id": "minimal-piano-fixture",
+      "title": "Minimal Piano Fixture",
+      "composer": "Test Composer",
+      "aliases": [],
+      "source_dir": "scores/minimal-piano-fixture",
+      "primary_musicxml_path": "scores/minimal-piano-fixture/minimal_piano.musicxml",
+      "pdf_paths": [],
+      "musicxml_paths": [
+        "scores/minimal-piano-fixture/minimal_piano.musicxml"
+      ],
+      "score_source_type": "musicxml",
+      "score_revision_id": "9fb50df99fb7fbbc",
+      "converted_from_pdf": false,
+      "conversion_status": "not_needed",
+      "validation_status": "valid",
+      "arrangement_note": null,
+      "difficulty_level": null,
+      "measure_count": 1,
+      "part_count": 1,
+      "has_piano_hands_mapping": true,
+      "last_practiced_at": null,
+      "practice_count": 0,
+      "current_stage": "new_piece",
+      "known_issues": [],
+      "created_at": "2026-06-16T15:25:54.165076+00:00",
+      "updated_at": "2026-06-16T15:25:54.165076+00:00"
+    },
+    {
+      "piece_id": "por-una-cabeza-feisi",
+      "title": "Por Una Cabeza Feisi",
+      "composer": null,
+      "aliases": [],
+      "source_dir": "scores/por-una-cabeza-feisi",
+      "primary_musicxml_path": "scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.mxl",
+      "pdf_paths": [],
+      "musicxml_paths": [
+        "scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.mxl"
+      ],
+      "score_source_type": "musicxml",
+      "score_revision_id": null,
+      "converted_from_pdf": false,
+      "conversion_status": "not_needed",
+      "validation_status": "valid",
+      "arrangement_note": null,
+      "difficulty_level": null,
+      "measure_count": 66,
+      "part_count": 1,
+      "has_piano_hands_mapping": true,
+      "last_practiced_at": null,
+      "practice_count": 0,
+      "current_stage": "new_piece",
+      "known_issues": [],
+      "created_at": "2026-06-16T15:25:54.165076+00:00",
+      "updated_at": "2026-06-16T15:25:54.165076+00:00"
+    }
+  ]
+}

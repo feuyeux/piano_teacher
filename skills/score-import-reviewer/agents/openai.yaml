@@ -1,0 +1,4 @@
+interface:
+  display_name: "Score Import Reviewer"
+  short_description: "Review PDF-to-MusicXML imports before practice analysis."
+  default_prompt: "Use this skill to convert or review a score import and decide whether it is safe enough for piano practice analysis."

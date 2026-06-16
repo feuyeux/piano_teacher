@@ -1,0 +1,177 @@
+2026-06-15 23:49:42,837 INFO [Por_una_cabeza_Feisi]                 Book.java:560  | 3 sheets in /Users/zonghe/Downloads/piano_teacher/Por_una_cabeza_Feisi.pdf
+2026-06-15 23:49:43,023 INFO []                 Book.java:2565 | Stored /book.xml
+2026-06-15 23:49:43,024 INFO []                 Book.java:2525 | Book stored as /Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.omr
+2026-06-15 23:49:43,029 INFO []                 Book.java:1929 | Book reaching PAGE on sheets:[#1#2#3]
+2026-06-15 23:49:43,031 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | LOAD
+2026-06-15 23:49:43,582 INFO [Por_una_cabeza_Feisi#1]            SheetStub.java:1278 | Loaded image #1 2479x3508 from /Users/zonghe/Downloads/piano_teacher/Por_una_cabeza_Feisi.pdf
+2026-06-15 23:49:43,586 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | BINARY
+2026-06-15 23:49:44,418 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | SCALE
+2026-06-15 23:49:44,449 INFO [Por_una_cabeza_Feisi#1]         ScaleBuilder.java:255  | Beam  guessed height: 13 -- mid of [6..20]
+2026-06-15 23:49:44,450 INFO [Por_una_cabeza_Feisi#1]         ScaleBuilder.java:271  | Beam measured height: 11 -- 0.36 of [6..20] range at 372% of needed quorum
+2026-06-15 23:49:44,450 INFO [Por_una_cabeza_Feisi#1]         ScaleBuilder.java:401  | Normalized black jitter: 4.76 %
+2026-06-15 23:49:44,451 INFO [Por_una_cabeza_Feisi#1]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2026-06-15 23:49:44,452 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | GRID
+2026-06-15 23:49:45,255 INFO [Por_una_cabeza_Feisi#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2026-06-15 23:49:45,300 INFO [Por_una_cabeza_Feisi#1]    ClustersRetriever.java:326  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2026-06-15 23:49:45,550 INFO [Por_una_cabeza_Feisi#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2026-06-15 23:49:46,048 INFO [Por_una_cabeza_Feisi#1]        SystemManager.java:779  | 1 part along 5 systems
+2026-06-15 23:49:46,049 INFO [Por_una_cabeza_Feisi#1]                 Book.java:543  | Created scores: [{Score 1}]
+2026-06-15 23:49:46,049 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | HEADERS
+2026-06-15 23:49:47,430 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | STEM_SEEDS
+2026-06-15 23:49:47,507 INFO [Por_una_cabeza_Feisi#1]        StemSeedsStep.java:86   | stem(3 max:4)
+2026-06-15 23:49:47,580 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | BEAMS
+2026-06-15 23:49:52,375 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | LEDGERS
+2026-06-15 23:49:53,120 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | HEADS
+2026-06-15 23:50:00,879 INFO [Por_una_cabeza_Feisi#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:0.3,R:0.2]}
+2026-06-15 23:50:00,880 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | STEMS
+2026-06-15 23:50:01,990 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | REDUCTION
+2026-06-15 23:50:02,171 INFO [Por_una_cabeza_Feisi#1]        ReductionStep.java:105  | Stems free length median value: 73 pixels, 3.5 interlines
+2026-06-15 23:50:02,175 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | CUE_BEAMS
+2026-06-15 23:50:02,176 INFO [Por_una_cabeza_Feisi#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2026-06-15 23:50:02,176 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | TEXTS
+2026-06-15 23:50:02,343 WARN [Por_una_cabeza_Feisi#1]         TesseractOCR.java:341  | Language 'eng' is not supported
+2026-06-15 23:50:02,344 INFO [Por_una_cabeza_Feisi#1]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2026-06-15 23:50:02,354 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | MEASURES
+2026-06-15 23:50:02,363 INFO [Por_una_cabeza_Feisi#1]                 Page.java:307  | 21 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 5 in system#4, 4 in system#5]
+2026-06-15 23:50:02,364 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | CHORDS
+2026-06-15 23:50:02,380 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | CURVES
+2026-06-15 23:50:03,537 INFO [Por_una_cabeza_Feisi#1]         SlursBuilder.java:240  | Slurs: 27
+2026-06-15 23:50:03,587 INFO [Por_una_cabeza_Feisi#1]      SegmentsBuilder.java:155  | Segments: 46
+2026-06-15 23:50:03,596 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | SYMBOLS
+2026-06-15 23:50:05,141 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | LINKS
+2026-06-15 23:50:05,148 INFO [Por_una_cabeza_Feisi#1]        SymbolsLinker.java:258  | No chord linked to OctaveShiftInter#6284{(0.225) staff:1 VENTIDUESIMA ALTA} at java.awt.Point[x=1497,y=163]
+2026-06-15 23:50:05,150 INFO [Por_una_cabeza_Feisi#1]        SymbolsLinker.java:258  | No chord linked to OctaveShiftInter#6351{(0.539) staff:1 OTTAVA ALTA} at java.awt.Point[x=2205,y=278]
+2026-06-15 23:50:05,150 INFO [Por_una_cabeza_Feisi#1]        SymbolsLinker.java:258  | No chord linked to OctaveShiftInter#6396{(0.126) staff:1 QUINDICESIMA ALTA} at java.awt.Point[x=2332,y=218]
+2026-06-15 23:50:05,205 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | RHYTHMS
+2026-06-15 23:50:05,258 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#13} No timeOffset for HeadChordInter#5419{(0.965/0.965) staff:7 slot#3 dur:1/16}
+2026-06-15 23:50:05,258 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#13} No timeOffset for RestChordInter#6649{(0.727/0.727) staff:8 slot#3 dur:1/4}
+2026-06-15 23:50:05,259 INFO [Por_una_cabeza_Feisi#1]          StackRhythm.java:224  | S4 MeasureStack#13 no correct rhythm
+2026-06-15 23:50:05,265 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#17} No timeOffset for RestChordInter#6654{(0.798/0.798) staff:7 slot#5 dur:3/32}
+2026-06-15 23:50:05,266 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#17} No timeOffset for RestChordInter#6655{(0.793/0.793) staff:8 slot#5 dur:3/32}
+2026-06-15 23:50:05,266 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#17} No timeOffset for RestChordInter#6654{(0.798/0.798) staff:7 slot#5 dur:3/32}
+2026-06-15 23:50:05,266 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#17} No timeOffset for RestChordInter#6655{(0.793/0.793) staff:8 slot#5 dur:3/32}
+2026-06-15 23:50:05,266 INFO [Por_una_cabeza_Feisi#1]                Voice.java:257  | Measure{#17} Voice{#1 excess:1/8} too long
+2026-06-15 23:50:05,267 INFO [Por_una_cabeza_Feisi#1]                Voice.java:257  | Measure{#17} Voice{#5 excess:1/8} too long
+2026-06-15 23:50:05,267 INFO [Por_una_cabeza_Feisi#1]          StackRhythm.java:224  | S4 MeasureStack#17 no correct rhythm
+2026-06-15 23:50:05,269 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#18} No timeOffset for HeadChordInter#5456{(0.969/0.969) staff:9 slot#5 dur:1/16}
+2026-06-15 23:50:05,269 INFO [Por_una_cabeza_Feisi#1]        MeasureRhythm.java:1044 | Measure{#18} No timeOffset for HeadChordInter#5469{(0.965/0.965) staff:10 slot#5 dur:1/16}
+2026-06-15 23:50:05,269 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#18} No timeOffset for HeadChordInter#5458{(0.969/0.969) staff:9 slot#8 dur:1/16}
+2026-06-15 23:50:05,269 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#18} No timeOffset for HeadChordInter#5469{(0.965/0.965) staff:10 slot#5 dur:1/16}
+2026-06-15 23:50:05,270 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#18} No timeOffset for HeadChordInter#5458{(0.969/0.969) staff:9 slot#8 dur:1/16}
+2026-06-15 23:50:05,270 INFO [Por_una_cabeza_Feisi#1]   AbstractChordInter.java:627  | Measure{#18} No timeOffset for RestChordInter#6706{(0.798/0.798) staff:10 slot#6 dur:1/16}
+2026-06-15 23:50:05,270 INFO [Por_una_cabeza_Feisi#1]          StackRhythm.java:224  | S5 MeasureStack#18 no correct rhythm
+2026-06-15 23:50:05,274 INFO [Por_una_cabeza_Feisi#1]       StepMonitoring.java:98   | PAGE
+2026-06-15 23:50:05,283 INFO [Por_una_cabeza_Feisi#1]                Voice.java:257  | Measure{#17} Voice{#1 excess:1/8} too long
+2026-06-15 23:50:05,283 INFO [Por_una_cabeza_Feisi#1]                Voice.java:257  | Measure{#17} Voice{#5 excess:1/8} too long
+2026-06-15 23:50:05,284 INFO [Por_una_cabeza_Feisi#1]                 Book.java:2584 | Book{Por_una_cabeza_Feisi} storing
+2026-06-15 23:50:05,376 INFO [Por_una_cabeza_Feisi#1]                 Book.java:2565 | Stored /book.xml
+2026-06-15 23:50:05,535 INFO [Por_una_cabeza_Feisi#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2026-06-15 23:50:06,353 INFO [Por_una_cabeza_Feisi#1]                Sheet.java:1583 | Stored /sheet#1/sheet#1.xml
+2026-06-15 23:50:06,353 INFO [Por_una_cabeza_Feisi#1]                 Book.java:2525 | Book stored as /Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.omr
+2026-06-15 23:50:06,355 INFO [Por_una_cabeza_Feisi#1]            SheetStub.java:1655 | Sheet#1 disposed
+2026-06-15 23:50:06,400 INFO [Por_una_cabeza_Feisi#1]                 Book.java:2050 | End of Stub#1
+2026-06-15 23:50:06,401 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | LOAD
+2026-06-15 23:50:06,499 INFO [Por_una_cabeza_Feisi#2]            SheetStub.java:1278 | Loaded image #2 2479x3508 from /Users/zonghe/Downloads/piano_teacher/Por_una_cabeza_Feisi.pdf
+2026-06-15 23:50:06,500 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | BINARY
+2026-06-15 23:50:07,121 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | SCALE
+2026-06-15 23:50:07,145 INFO [Por_una_cabeza_Feisi#2]         ScaleBuilder.java:255  | Beam  guessed height: 13 -- mid of [6..20]
+2026-06-15 23:50:07,145 INFO [Por_una_cabeza_Feisi#2]         ScaleBuilder.java:271  | Beam measured height: 11 -- 0.36 of [6..20] range at 499% of needed quorum
+2026-06-15 23:50:07,146 INFO [Por_una_cabeza_Feisi#2]         ScaleBuilder.java:401  | Normalized black jitter: 4.76 %
+2026-06-15 23:50:07,146 INFO [Por_una_cabeza_Feisi#2]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(11)}
+2026-06-15 23:50:07,146 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | GRID
+2026-06-15 23:50:07,380 INFO [Por_una_cabeza_Feisi#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2026-06-15 23:50:07,400 INFO [Por_una_cabeza_Feisi#2]    ClustersRetriever.java:326  | Retrieved raw line clusters: 12 of sizes [5] with interline(20,21,21)
+2026-06-15 23:50:07,604 INFO [Por_una_cabeza_Feisi#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10] #6[11, 12]
+2026-06-15 23:50:07,772 INFO [Por_una_cabeza_Feisi#2]        SystemManager.java:779  | 1 part along 6 systems
+2026-06-15 23:50:07,773 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | HEADERS
+2026-06-15 23:50:08,119 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | STEM_SEEDS
+2026-06-15 23:50:08,153 INFO [Por_una_cabeza_Feisi#2]        StemSeedsStep.java:86   | stem(3 max:3)
+2026-06-15 23:50:08,173 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | BEAMS
+2026-06-15 23:50:12,183 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | LEDGERS
+2026-06-15 23:50:12,387 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | HEADS
+2026-06-15 23:50:21,128 INFO [Por_una_cabeza_Feisi#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.5,R:-0.5]}
+2026-06-15 23:50:21,129 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | STEMS
+2026-06-15 23:50:21,768 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | REDUCTION
+2026-06-15 23:50:21,890 INFO [Por_una_cabeza_Feisi#2]        ReductionStep.java:105  | Stems free length median value: 71 pixels, 3.4 interlines
+2026-06-15 23:50:21,893 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | CUE_BEAMS
+2026-06-15 23:50:21,893 INFO [Por_una_cabeza_Feisi#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2026-06-15 23:50:21,894 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | TEXTS
+2026-06-15 23:50:22,053 WARN [Por_una_cabeza_Feisi#2]         TesseractOCR.java:341  | Language 'eng' is not supported
+2026-06-15 23:50:22,053 INFO [Por_una_cabeza_Feisi#2]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2026-06-15 23:50:22,055 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | MEASURES
+2026-06-15 23:50:22,056 INFO [Por_una_cabeza_Feisi#2]                 Page.java:307  | 24 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5, 4 in system#6]
+2026-06-15 23:50:22,057 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | CHORDS
+2026-06-15 23:50:22,065 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | CURVES
+2026-06-15 23:50:22,890 INFO [Por_una_cabeza_Feisi#2]         SlursBuilder.java:240  | Slurs: 27
+2026-06-15 23:50:22,907 INFO [Por_una_cabeza_Feisi#2]      SegmentsBuilder.java:155  | Segments: 46
+2026-06-15 23:50:22,908 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | SYMBOLS
+2026-06-15 23:50:23,780 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | LINKS
+2026-06-15 23:50:23,840 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | RHYTHMS
+2026-06-15 23:50:23,841 INFO [Por_una_cabeza_Feisi#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2026-06-15 23:50:23,850 INFO [Por_una_cabeza_Feisi#2]                Voice.java:257  | Measure{#4} Voice{#5 excess:3/16} too long
+2026-06-15 23:50:23,850 INFO [Por_una_cabeza_Feisi#2]          StackRhythm.java:224  | S1 MeasureStack#4 no correct rhythm
+2026-06-15 23:50:23,879 INFO [Por_una_cabeza_Feisi#2]       StepMonitoring.java:98   | PAGE
+2026-06-15 23:50:23,881 INFO [Por_una_cabeza_Feisi#2]                Voice.java:257  | Measure{#4} Voice{#5 excess:3/16} too long
+2026-06-15 23:50:23,882 INFO [Por_una_cabeza_Feisi#2]                 Book.java:2584 | Book{Por_una_cabeza_Feisi} storing
+2026-06-15 23:50:23,993 INFO [Por_una_cabeza_Feisi#2]                 Book.java:2565 | Stored /book.xml
+2026-06-15 23:50:24,079 INFO [Por_una_cabeza_Feisi#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2026-06-15 23:50:24,857 INFO [Por_una_cabeza_Feisi#2]                Sheet.java:1583 | Stored /sheet#2/sheet#2.xml
+2026-06-15 23:50:24,858 INFO [Por_una_cabeza_Feisi#2]                 Book.java:2525 | Book stored as /Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.omr
+2026-06-15 23:50:24,865 INFO [Por_una_cabeza_Feisi#2]            SheetStub.java:1655 | Sheet#2 disposed
+2026-06-15 23:50:24,907 INFO [Por_una_cabeza_Feisi#2]                 Book.java:2050 | End of Stub#2
+2026-06-15 23:50:24,908 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | LOAD
+2026-06-15 23:50:24,999 INFO [Por_una_cabeza_Feisi#3]            SheetStub.java:1278 | Loaded image #3 2479x3508 from /Users/zonghe/Downloads/piano_teacher/Por_una_cabeza_Feisi.pdf
+2026-06-15 23:50:24,999 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | BINARY
+2026-06-15 23:50:25,680 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | SCALE
+2026-06-15 23:50:25,683 INFO [Por_una_cabeza_Feisi#3]         ScaleBuilder.java:255  | Beam  guessed height: 13 -- mid of [6..20]
+2026-06-15 23:50:25,683 INFO [Por_una_cabeza_Feisi#3]         ScaleBuilder.java:271  | Beam measured height: 10 -- 0.29 of [6..20] range at 374% of needed quorum
+2026-06-15 23:50:25,684 INFO [Por_una_cabeza_Feisi#3]         ScaleBuilder.java:401  | Normalized black jitter: 4.76 %
+2026-06-15 23:50:25,684 INFO [Por_una_cabeza_Feisi#3]            ScaleStep.java:65   | Scale{ interline(20,21,21) line(2,2,3) beam(10)}
+2026-06-15 23:50:25,684 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | GRID
+2026-06-15 23:50:25,812 INFO [Por_una_cabeza_Feisi#3]       LinesRetriever.java:1500 | Global slope: 0.00000
+2026-06-15 23:50:25,825 INFO [Por_una_cabeza_Feisi#3]    ClustersRetriever.java:326  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,21,21)
+2026-06-15 23:50:25,911 INFO [Por_una_cabeza_Feisi#3]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2026-06-15 23:50:26,108 INFO [Por_una_cabeza_Feisi#3]        SystemManager.java:779  | 1 part along 5 systems
+2026-06-15 23:50:26,108 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | HEADERS
+2026-06-15 23:50:26,403 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | STEM_SEEDS
+2026-06-15 23:50:26,440 INFO [Por_una_cabeza_Feisi#3]        StemSeedsStep.java:86   | stem(3 max:4)
+2026-06-15 23:50:26,455 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | BEAMS
+2026-06-15 23:50:30,275 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | LEDGERS
+2026-06-15 23:50:30,437 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | HEADS
+2026-06-15 23:50:37,922 INFO [Por_una_cabeza_Feisi#3]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.2,R:-0.3]}
+2026-06-15 23:50:37,923 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | STEMS
+2026-06-15 23:50:38,425 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | REDUCTION
+2026-06-15 23:50:38,514 INFO [Por_una_cabeza_Feisi#3]        ReductionStep.java:105  | Stems free length median value: 73 pixels, 3.5 interlines
+2026-06-15 23:50:38,516 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | CUE_BEAMS
+2026-06-15 23:50:38,516 INFO [Por_una_cabeza_Feisi#3]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2026-06-15 23:50:38,517 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | TEXTS
+2026-06-15 23:50:38,623 WARN [Por_una_cabeza_Feisi#3]         TesseractOCR.java:341  | Language 'eng' is not supported
+2026-06-15 23:50:38,623 INFO [Por_una_cabeza_Feisi#3]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2026-06-15 23:50:38,625 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | MEASURES
+2026-06-15 23:50:38,626 INFO [Por_una_cabeza_Feisi#3]                 Page.java:307  | 21 raw measures: [5 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5]
+2026-06-15 23:50:38,626 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | CHORDS
+2026-06-15 23:50:38,631 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | CURVES
+2026-06-15 23:50:39,353 INFO [Por_una_cabeza_Feisi#3]         SlursBuilder.java:240  | Slurs: 18
+2026-06-15 23:50:39,367 INFO [Por_una_cabeza_Feisi#3]      SegmentsBuilder.java:155  | Segments: 38
+2026-06-15 23:50:39,368 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | SYMBOLS
+2026-06-15 23:50:40,107 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | LINKS
+2026-06-15 23:50:40,189 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | RHYTHMS
+2026-06-15 23:50:40,190 INFO [Por_una_cabeza_Feisi#3]           PageRhythm.java:199  | {Page#3.1} Time value reused from sheet#1
+2026-06-15 23:50:40,217 INFO [Por_una_cabeza_Feisi#3]                Voice.java:257  | Measure{#13} Voice{#5 excess:1/8} too long
+2026-06-15 23:50:40,217 INFO [Por_una_cabeza_Feisi#3]          StackRhythm.java:224  | S3 MeasureStack#13 no correct rhythm
+2026-06-15 23:50:40,236 INFO [Por_una_cabeza_Feisi#3]       StepMonitoring.java:98   | PAGE
+2026-06-15 23:50:40,239 INFO [Por_una_cabeza_Feisi#3]                Voice.java:257  | Measure{#13} Voice{#5 excess:1/8} too long
+2026-06-15 23:50:40,239 INFO [Por_una_cabeza_Feisi#3]                 Book.java:2584 | Book{Por_una_cabeza_Feisi} storing
+2026-06-15 23:50:40,330 INFO [Por_una_cabeza_Feisi#3]                 Book.java:2565 | Stored /book.xml
+2026-06-15 23:50:40,399 INFO [Por_una_cabeza_Feisi#3]           DataHolder.java:348  | Stored /sheet#3/BINARY.png
+2026-06-15 23:50:40,891 INFO [Por_una_cabeza_Feisi#3]                Sheet.java:1583 | Stored /sheet#3/sheet#3.xml
+2026-06-15 23:50:40,891 INFO [Por_una_cabeza_Feisi#3]                 Book.java:2525 | Book stored as /Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.omr
+2026-06-15 23:50:40,903 INFO [Por_una_cabeza_Feisi#3]            SheetStub.java:1655 | Sheet#3 disposed
+2026-06-15 23:50:40,940 INFO [Por_una_cabeza_Feisi#3]                 Book.java:2050 | End of Stub#3
+2026-06-15 23:50:40,940 INFO [Por_una_cabeza_Feisi]                 Book.java:2057 | End of Book{Por_una_cabeza_Feisi}
+2026-06-15 23:50:41,524 INFO [Por_una_cabeza_Feisi]            SheetStub.java:1000 | Loaded /sheet#1/sheet#1.xml
+2026-06-15 23:50:41,942 INFO [Por_una_cabeza_Feisi]            SheetStub.java:1000 | Loaded /sheet#2/sheet#2.xml
+2026-06-15 23:50:42,242 INFO [Por_una_cabeza_Feisi]            SheetStub.java:1000 | Loaded /sheet#3/sheet#3.xml
+2026-06-15 23:50:42,615 INFO [Por_una_cabeza_Feisi]      PartwiseBuilder.java:2706 | Exporting sheet(s): [#1#2#3]
+2026-06-15 23:50:42,822 INFO [Por_una_cabeza_Feisi]        ScoreExporter.java:164  | Score Por_una_cabeza_Feisi exported to /Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/Por_una_cabeza_Feisi.mxl
+2026-06-15 23:50:42,924 INFO [Por_una_cabeza_Feisi]                Score.java:181  | Closing {Score 1}

@@ -1,0 +1,370 @@
+{
+  "session_id": "por-una-cabeza-feisi-20260615T161914407196+0000",
+  "ticks_per_beat": null,
+  "events": [
+    {
+      "event_id": "mock-event-1",
+      "type": "note",
+      "pitch_midi": 71,
+      "velocity": 72,
+      "start_ms": 500,
+      "end_ms": 625,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-2",
+      "type": "note",
+      "pitch_midi": 72,
+      "velocity": 72,
+      "start_ms": 625,
+      "end_ms": 750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-3",
+      "type": "note",
+      "pitch_midi": 73,
+      "velocity": 72,
+      "start_ms": 750,
+      "end_ms": 875,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-4",
+      "type": "note",
+      "pitch_midi": 38,
+      "velocity": 72,
+      "start_ms": 750,
+      "end_ms": 1000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-5",
+      "type": "note",
+      "pitch_midi": 74,
+      "velocity": 72,
+      "start_ms": 875,
+      "end_ms": 1000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-6",
+      "type": "note",
+      "pitch_midi": 76,
+      "velocity": 72,
+      "start_ms": 2000,
+      "end_ms": 2125,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-7",
+      "type": "note",
+      "pitch_midi": 43,
+      "velocity": 72,
+      "start_ms": 2000,
+      "end_ms": 2250,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-8",
+      "type": "note",
+      "pitch_midi": 74,
+      "velocity": 72,
+      "start_ms": 2125,
+      "end_ms": 2250,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-9",
+      "type": "note",
+      "pitch_midi": 50,
+      "velocity": 72,
+      "start_ms": 2510,
+      "end_ms": 2760,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-10",
+      "type": "note",
+      "pitch_midi": 59,
+      "velocity": 72,
+      "start_ms": 2500,
+      "end_ms": 2750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-11",
+      "type": "note",
+      "pitch_midi": 73,
+      "velocity": 72,
+      "start_ms": 2500,
+      "end_ms": 2625,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-12",
+      "type": "note",
+      "pitch_midi": 74,
+      "velocity": 72,
+      "start_ms": 2625,
+      "end_ms": 2750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-13",
+      "type": "note",
+      "pitch_midi": 39,
+      "velocity": 72,
+      "start_ms": 2750,
+      "end_ms": 3000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-14",
+      "type": "note",
+      "pitch_midi": 76,
+      "velocity": 72,
+      "start_ms": 2750,
+      "end_ms": 2875,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-15",
+      "type": "note",
+      "pitch_midi": 78,
+      "velocity": 72,
+      "start_ms": 2875,
+      "end_ms": 3000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-16",
+      "type": "note",
+      "pitch_midi": 81,
+      "velocity": 72,
+      "start_ms": 4000,
+      "end_ms": 4125,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-17",
+      "type": "note",
+      "pitch_midi": 43,
+      "velocity": 72,
+      "start_ms": 4000,
+      "end_ms": 4250,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-18",
+      "type": "note",
+      "pitch_midi": 79,
+      "velocity": 72,
+      "start_ms": 4385,
+      "end_ms": 4510,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-19",
+      "type": "note",
+      "pitch_midi": 50,
+      "velocity": 72,
+      "start_ms": 4250,
+      "end_ms": 4500,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-20",
+      "type": "note",
+      "pitch_midi": 59,
+      "velocity": 72,
+      "start_ms": 4500,
+      "end_ms": 4750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-21",
+      "type": "note",
+      "pitch_midi": 83,
+      "velocity": 72,
+      "start_ms": 4500,
+      "end_ms": 4625,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-22",
+      "type": "note",
+      "pitch_midi": 84,
+      "velocity": 72,
+      "start_ms": 4625,
+      "end_ms": 4750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-23",
+      "type": "note",
+      "pitch_midi": 38,
+      "velocity": 72,
+      "start_ms": 4750,
+      "end_ms": 5000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-24",
+      "type": "note",
+      "pitch_midi": 81,
+      "velocity": 72,
+      "start_ms": 4750,
+      "end_ms": 4875,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-25",
+      "type": "note",
+      "pitch_midi": 83,
+      "velocity": 72,
+      "start_ms": 4875,
+      "end_ms": 5000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-26",
+      "type": "note",
+      "pitch_midi": 80,
+      "velocity": 72,
+      "start_ms": 6000,
+      "end_ms": 6125,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-27",
+      "type": "note",
+      "pitch_midi": 43,
+      "velocity": 72,
+      "start_ms": 6260,
+      "end_ms": 6510,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-28",
+      "type": "note",
+      "pitch_midi": 81,
+      "velocity": 72,
+      "start_ms": 6125,
+      "end_ms": 6250,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-29",
+      "type": "note",
+      "pitch_midi": 78,
+      "velocity": 72,
+      "start_ms": 6250,
+      "end_ms": 6375,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-30",
+      "type": "note",
+      "pitch_midi": 50,
+      "velocity": 72,
+      "start_ms": 6250,
+      "end_ms": 6500,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-31",
+      "type": "note",
+      "pitch_midi": 79,
+      "velocity": 72,
+      "start_ms": 6375,
+      "end_ms": 6500,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-32",
+      "type": "note",
+      "pitch_midi": 78,
+      "velocity": 72,
+      "start_ms": 6500,
+      "end_ms": 6875,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-33",
+      "type": "note",
+      "pitch_midi": 59,
+      "velocity": 72,
+      "start_ms": 6500,
+      "end_ms": 6750,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-34",
+      "type": "note",
+      "pitch_midi": 44,
+      "velocity": 72,
+      "start_ms": 6750,
+      "end_ms": 7000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-35",
+      "type": "note",
+      "pitch_midi": 74,
+      "velocity": 72,
+      "start_ms": 6875,
+      "end_ms": 7000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-36",
+      "type": "note",
+      "pitch_midi": 72,
+      "velocity": 72,
+      "start_ms": 8260,
+      "end_ms": 8510,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-37",
+      "type": "note",
+      "pitch_midi": 45,
+      "velocity": 72,
+      "start_ms": 8000,
+      "end_ms": 8250,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-38",
+      "type": "note",
+      "pitch_midi": 52,
+      "velocity": 72,
+      "start_ms": 8250,
+      "end_ms": 8500,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-39",
+      "type": "note",
+      "pitch_midi": 85,
+      "velocity": 72,
+      "start_ms": 8500,
+      "end_ms": 8625,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-40",
+      "type": "note",
+      "pitch_midi": 60,
+      "velocity": 72,
+      "start_ms": 8500,
+      "end_ms": 8750,
+      "channel": 0
+    }
+  ],
+  "mock": {
+    "mode": "rough",
+    "source_normalized_score_path": "/Users/zonghe/Downloads/piano_teacher/scores/por-una-cabeza-feisi/normalized_score.json"
+  }
+}

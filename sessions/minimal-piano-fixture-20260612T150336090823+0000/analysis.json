@@ -1,0 +1,64 @@
+{
+  "analysis_id": "minimal-piano-fixture-20260612T150336090823+0000-analysis",
+  "session_id": "minimal-piano-fixture-20260612T150336090823+0000",
+  "piece_id": "minimal-piano-fixture",
+  "generated_at": "2026-06-12T15:03:36.210696+00:00",
+  "analysis_version": "0.1.0",
+  "alignment_status": "completed",
+  "aligned_note_count": 1,
+  "expected_note_count": 2,
+  "performed_note_count": 2,
+  "overall_score": 67.5,
+  "pitch_accuracy": 0.5,
+  "rhythm_accuracy": 1.0,
+  "timing_stability": 1.0,
+  "tempo_stability": null,
+  "missed_notes_count": 0,
+  "extra_notes_count": 0,
+  "repeated_note_count": 0,
+  "pedal_event_count": null,
+  "estimated_tempo_bpm": null,
+  "best_measure_range": [],
+  "worst_measure_range": [
+    1,
+    1
+  ],
+  "problem_measures": [
+    {
+      "measure_number": 1,
+      "severity": "low",
+      "issue_tags": [
+        "pitch_error"
+      ],
+      "left_hand_issue_count": 1,
+      "right_hand_issue_count": 0,
+      "notes": "pitch_error"
+    }
+  ],
+  "problem_hands": {
+    "left": {
+      "issue_count": 1,
+      "dominant_tags": [
+        "pitch_error"
+      ]
+    },
+    "right": {
+      "issue_count": 0,
+      "dominant_tags": []
+    },
+    "unknown": {
+      "issue_count": 0,
+      "dominant_tags": []
+    }
+  },
+  "issue_summary_tags": [
+    "pitch_error"
+  ],
+  "recommended_focus_measures": [
+    1
+  ],
+  "recommended_next_steps": [
+    "先分手慢练第 1 小节，连续三遍音高无错后再合手。"
+  ],
+  "warnings": []
+}

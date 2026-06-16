@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["analysis_id", "session_id", "piece_id", "overall_score", "problem_measures"],
+  "properties": {
+    "analysis_id": {"type": "string"},
+    "session_id": {"type": "string"},
+    "piece_id": {"type": "string"},
+    "overall_score": {"type": ["number", "null"]},
+    "problem_measures": {"type": "array"}
+  }
+}

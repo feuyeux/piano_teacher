@@ -1,0 +1,11 @@
+{
+  "score_library_path": "scores",
+  "session_output_path": "sessions",
+  "profile_output_path": "profiles",
+  "musicxml_converter_command": "/Applications/Audiveris.app/Contents/MacOS/Audiveris -batch -export -output {output_dir} {input}",
+  "score_import_review_command": "/Users/zonghe/Downloads/piano_teacher/scripts/hermes_score_import_review",
+  "practice_feedback_command": "/Users/zonghe/Downloads/piano_teacher/scripts/hermes_practice_feedback",
+  "midi_input_device": null,
+  "default_tempo_tolerance_ms": 180,
+  "default_pitch_tolerance": 0
+}

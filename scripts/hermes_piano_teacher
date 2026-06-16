@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /Users/zonghe/Downloads/piano_teacher
+export PYTHONPATH=/Users/zonghe/Downloads/piano_teacher${PYTHONPATH:+:$PYTHONPATH}
+export PIANO_TEACHER_USE_HERMES_SUBAGENTS=1
+exec python3 -m app.main ask "$*"

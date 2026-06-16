@@ -1,0 +1,44 @@
+{
+  "analysis_id": "minimal-piano-fixture-20260616T152543923189+0000-analysis",
+  "session_id": "minimal-piano-fixture-20260616T152543923189+0000",
+  "piece_id": "minimal-piano-fixture",
+  "generated_at": "2026-06-16T15:25:43.926187+00:00",
+  "analysis_version": "0.1.0",
+  "alignment_status": "completed",
+  "aligned_note_count": 2,
+  "expected_note_count": 2,
+  "performed_note_count": 2,
+  "overall_score": 100.0,
+  "pitch_accuracy": 1.0,
+  "rhythm_accuracy": 1.0,
+  "timing_stability": 1.0,
+  "tempo_stability": null,
+  "missed_notes_count": 0,
+  "extra_notes_count": 0,
+  "repeated_note_count": 0,
+  "pedal_event_count": null,
+  "estimated_tempo_bpm": null,
+  "best_measure_range": [],
+  "worst_measure_range": [],
+  "problem_measures": [],
+  "problem_hands": {
+    "left": {
+      "issue_count": 0,
+      "dominant_tags": []
+    },
+    "right": {
+      "issue_count": 0,
+      "dominant_tags": []
+    },
+    "unknown": {
+      "issue_count": 0,
+      "dominant_tags": []
+    }
+  },
+  "issue_summary_tags": [],
+  "recommended_focus_measures": [],
+  "recommended_next_steps": [
+    "保持当前速度完整弹奏一遍，并记录是否仍能稳定。"
+  ],
+  "warnings": []
+}

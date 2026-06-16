@@ -1,0 +1,4 @@
+interface:
+  display_name: "Piano Teacher Conductor"
+  short_description: "Coordinate piano practice workflows from natural language."
+  default_prompt: "Use this skill to start or finish piano practice, review imported scores, and summarize long-term progress through the local piano teacher scripts."

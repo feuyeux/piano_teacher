@@ -1,0 +1,144 @@
+{
+  "analysis_id": "por-una-cabeza-feisi-20260615T161914407196+0000-analysis",
+  "session_id": "por-una-cabeza-feisi-20260615T161914407196+0000",
+  "piece_id": "por-una-cabeza-feisi",
+  "generated_at": "2026-06-15T16:19:18.441151+00:00",
+  "analysis_version": "0.1.0",
+  "alignment_status": "partial",
+  "aligned_note_count": 33,
+  "expected_note_count": 805,
+  "performed_note_count": 40,
+  "overall_score": 37.8,
+  "pitch_accuracy": 0.046,
+  "rhythm_accuracy": 0.995,
+  "timing_stability": 0.995,
+  "tempo_stability": null,
+  "missed_notes_count": 765,
+  "extra_notes_count": 0,
+  "repeated_note_count": 0,
+  "pedal_event_count": null,
+  "estimated_tempo_bpm": null,
+  "best_measure_range": [],
+  "worst_measure_range": [
+    23,
+    23
+  ],
+  "problem_measures": [
+    {
+      "measure_number": 23,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 7,
+      "right_hand_issue_count": 10,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 25,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 9,
+      "right_hand_issue_count": 8,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 56,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 7,
+      "right_hand_issue_count": 10,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 58,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 9,
+      "right_hand_issue_count": 8,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 24,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 6,
+      "right_hand_issue_count": 10,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 32,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 6,
+      "right_hand_issue_count": 10,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 57,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 6,
+      "right_hand_issue_count": 10,
+      "notes": "missed"
+    },
+    {
+      "measure_number": 63,
+      "severity": "high",
+      "issue_tags": [
+        "missed"
+      ],
+      "left_hand_issue_count": 8,
+      "right_hand_issue_count": 8,
+      "notes": "missed"
+    }
+  ],
+  "problem_hands": {
+    "left": {
+      "issue_count": 367,
+      "dominant_tags": [
+        "missed",
+        "timing_error",
+        "pitch_error"
+      ]
+    },
+    "right": {
+      "issue_count": 405,
+      "dominant_tags": [
+        "missed",
+        "timing_error",
+        "pitch_error"
+      ]
+    },
+    "unknown": {
+      "issue_count": 0,
+      "dominant_tags": []
+    }
+  },
+  "issue_summary_tags": [
+    "missed"
+  ],
+  "recommended_focus_measures": [
+    23,
+    25,
+    56
+  ],
+  "recommended_next_steps": [
+    "先分手慢练第 23、25、56 小节，连续三遍音高无错后再合手。"
+  ],
+  "warnings": [
+    "Performance has fewer notes than the score."
+  ]
+}

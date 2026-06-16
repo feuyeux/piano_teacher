@@ -1,0 +1,28 @@
+{
+  "session_id": "minimal-piano-fixture-20260615T162158103663+0000",
+  "ticks_per_beat": null,
+  "events": [
+    {
+      "event_id": "mock-event-1",
+      "type": "note",
+      "pitch_midi": 60,
+      "velocity": 72,
+      "start_ms": 0,
+      "end_ms": 2000,
+      "channel": 0
+    },
+    {
+      "event_id": "mock-event-2",
+      "type": "note",
+      "pitch_midi": 48,
+      "velocity": 72,
+      "start_ms": 0,
+      "end_ms": 2000,
+      "channel": 0
+    }
+  ],
+  "mock": {
+    "mode": "rough",
+    "source_normalized_score_path": "/Users/zonghe/Downloads/piano_teacher/scores/minimal-piano-fixture/normalized_score.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "summary": "这次《Minimal Piano Fixture》最需要处理的是第 1 小节附近的问题。 结构化评分为 67.5。",
+  "key_issues": [
+    {
+      "title": "小节问题",
+      "measure_range": "1",
+      "description": "检测到 pitch_error，严重程度 low。"
+    }
+  ],
+  "practice_plan": [
+    {
+      "step": "先分手慢练第 1 小节，连续三遍音高无错后再合手。",
+      "target": "连续三遍稳定后再进入下一步"
+    }
+  ],
+  "progress_note": "最近问题还没有明显消退，先不要急着提速。",
+  "next_focus": "先分手慢练第 1 小节，连续三遍音高无错后再合手。",
+  "confidence": "high"
+}

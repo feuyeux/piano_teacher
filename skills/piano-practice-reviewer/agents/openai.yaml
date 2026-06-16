@@ -1,0 +1,4 @@
+interface:
+  display_name: "Piano Practice Reviewer"
+  short_description: "Review MIDI-vs-score analysis and produce practice advice."
+  default_prompt: "Use this skill to turn structured piano practice analysis into concise feedback and a next practice plan."

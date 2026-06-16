@@ -1,0 +1,10 @@
+{
+  "audiveris_command": "audiveris -batch -export {input}",
+  "audiveris_command_with_output_dir_example": "audiveris -batch -export -output {output_dir} {input}",
+  "model": "gpt-4.1-mini",
+  "notes": [
+    "Set AUDIVERIS_COMMAND if your Audiveris binary or CLI arguments differ.",
+    "Set OPENAI_API_KEY for built-in OpenAI Responses API review.",
+    "Alternatively set MODEL_REVIEW_COMMAND to a command that reads JSON from stdin and writes strict review JSON to stdout."
+  ]
+}

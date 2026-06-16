@@ -1,0 +1,23 @@
+{
+  "piece_id": "minimal-piano-fixture",
+  "stage_label": "note_learning",
+  "practice_count": 17,
+  "total_practice_minutes": 0,
+  "last_practiced_at": "2026-06-16T15:26:32.248019+00:00",
+  "best_stable_tempo_bpm": null,
+  "latest_tempo_bpm": null,
+  "recent_issue_patterns": [],
+  "worst_measures": [],
+  "improving_measures": [],
+  "plateau_measures": [],
+  "last_three_scores": [
+    67.5,
+    100.0,
+    100.0
+  ],
+  "current_goal": "mock dashboard practice",
+  "next_goal": "保持当前速度完整弹奏一遍，并记录是否仍能稳定。",
+  "last_feedback_digest": "Dashboard smoke test memory note.",
+  "teacher_focus_tags": [],
+  "updated_at": "2026-06-16T15:26:32.248031+00:00"
+}

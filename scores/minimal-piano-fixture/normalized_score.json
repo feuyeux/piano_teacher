@@ -1,0 +1,49 @@
+{
+  "piece_id": "minimal-piano-fixture",
+  "score_revision_id": "9fb50df99fb7fbbc",
+  "title": "Minimal Piano Fixture",
+  "composer": "Test Composer",
+  "time_signature": "4/4",
+  "key_signature": "0",
+  "default_tempo_bpm": null,
+  "division_unit": 1,
+  "measure_count": 1,
+  "measures": [
+    {
+      "measure_number": 1,
+      "beats": null,
+      "beat_unit": null,
+      "notes": [
+        {
+          "note_id": "minimal-piano-fixture-m1-n1",
+          "pitch_midi": 60,
+          "pitch_name": "C4",
+          "voice": 1,
+          "staff": "1",
+          "hand": "right",
+          "is_rest": false,
+          "onset_division": 0,
+          "duration_division": 4,
+          "tie_start": false,
+          "tie_stop": false,
+          "chord_index": null
+        },
+        {
+          "note_id": "minimal-piano-fixture-m1-n2",
+          "pitch_midi": 48,
+          "pitch_name": "C3",
+          "voice": 2,
+          "staff": "2",
+          "hand": "left",
+          "is_rest": false,
+          "onset_division": 0,
+          "duration_division": 4,
+          "tie_start": false,
+          "tie_stop": false,
+          "chord_index": null
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-16T15:25:54.204895+00:00"
+}

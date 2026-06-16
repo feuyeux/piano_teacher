@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["piece_id", "primary_musicxml_path", "validation_status"],
+  "properties": {
+    "piece_id": {"type": "string"},
+    "primary_musicxml_path": {"type": ["string", "null"]},
+    "validation_status": {"enum": ["valid", "warning", "invalid"]}
+  }
+}

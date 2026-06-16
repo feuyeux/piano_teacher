@@ -1,0 +1,29 @@
+{
+  "summary": "这次《Por Una Cabeza Feisi》最需要处理的是第 23 小节附近的问题。 结构化评分为 37.3。",
+  "key_issues": [
+    {
+      "title": "小节问题",
+      "measure_range": "23",
+      "description": "检测到 missed，严重程度 high。"
+    },
+    {
+      "title": "小节问题",
+      "measure_range": "25",
+      "description": "检测到 missed，严重程度 high。"
+    },
+    {
+      "title": "小节问题",
+      "measure_range": "56",
+      "description": "检测到 missed，严重程度 high。"
+    }
+  ],
+  "practice_plan": [
+    {
+      "step": "先分手慢练第 23、25、56 小节，连续三遍音高无错后再合手。",
+      "target": "连续三遍稳定后再进入下一步"
+    }
+  ],
+  "progress_note": "最近问题还没有明显消退，先不要急着提速。",
+  "next_focus": "先分手慢练第 23、25、56 小节，连续三遍音高无错后再合手。",
+  "confidence": "medium"
+}

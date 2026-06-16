@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+import re
+import subprocess
+import sys
+
+
+def extract_json(text: str) -> dict:
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        stripped = re.sub(r"^```(?:json)?\s*", "", stripped)
+        stripped = re.sub(r"\s*```$", "", stripped)
+    try:
+        return json.loads(stripped)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", stripped, flags=re.S)
+        if not match:
+            raise
+        return json.loads(match.group(0))
+
+
+def fallback(payload: dict, reason: str) -> dict:
+    analysis = payload.get("analysis") or {}
+    piece = payload.get("piece") or {}
+    problem_measures = analysis.get("problem_measures") or []
+    title = piece.get("title") or piece.get("piece_id") or "这首曲子"
+    focus = problem_measures[0].get("measure_number") if problem_measures else None
+    summary = f"这次《{title}》已完成结构化分析。"
+    if focus:
+        summary += f" 优先处理第 {focus} 小节附近的问题。"
+    return {
+        "summary": summary,
+        "key_issues": [
+            {
+                "title": "模型反馈降级",
+                "measure_range": str(focus or ""),
+                "description": reason,
+            }
+        ],
+        "practice_plan": [
+            {
+                "step": (analysis.get("recommended_next_steps") or ["慢速完整弹奏一遍，记录最不稳定的小节。"])[0],
+                "target": "连续三遍稳定后再进入下一步。",
+            }
+        ],
+        "progress_note": None,
+        "next_focus": (analysis.get("recommended_next_steps") or [None])[0],
+        "confidence": "low",
+    }
+
+
+def main() -> int:
+    request = json.load(sys.stdin)
+    system_prompt = request.get("system_prompt") or ""
+    payload = request["payload"]
+    prompt = (
+        f"{system_prompt}\n\n"
+        "Return only the strict JSON object, with no markdown.\n\n"
+        "Payload:\n"
+        f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
+    )
+    completed = subprocess.run(
+        ["hermes", "-z", prompt],
+        capture_output=True,
+        text=True,
+        check=False,
+        timeout=180,
+    )
+    if completed.returncode != 0:
+        reason = (completed.stderr or completed.stdout or "Hermes command failed.").strip()
+        print(json.dumps(fallback(payload, reason), ensure_ascii=False))
+        return 0
+    try:
+        print(json.dumps(extract_json(completed.stdout), ensure_ascii=False))
+    except Exception as exc:
+        print(json.dumps(fallback(payload, f"Hermes 输出不是有效 JSON: {exc}"), ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
