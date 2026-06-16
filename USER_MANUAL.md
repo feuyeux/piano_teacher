@@ -13,6 +13,21 @@ cd /Users/zonghe/Downloads/piano_teacher
 推荐使用脚本式 Hermes Skill 入口：
 
 ```bash
+scripts/start_hermes_piano_teacher_cli
+```
+
+启动后直接在 Hermes CLI 里说：
+
+```text
+准备 por-una-cabeza-feisi
+mock 听我练习 por-una-cabeza-feisi 的前40个音，模式 rough
+查看 por-una-cabeza-feisi 的学习进度和下一步计划
+请记住 por-una-cabeza-feisi：目标是慢速稳定右手旋律，下次目标是合手前复核第13小节，重点关注 right_hand timing
+```
+
+也可以不进入交互 CLI，直接调用同一个主控脚本：
+
+```bash
 scripts/hermes_piano_teacher "<自然语言请求>"
 ```
 
@@ -21,6 +36,8 @@ scripts/hermes_piano_teacher "<自然语言请求>"
 - 主控 agent：识别意图，调用本地 workflow。
 - 练习反馈子 agent：把 MIDI/谱面对齐后的结构化分析转成练习建议。
 - 谱面导入复核子 agent：review PDF/MusicXML 转谱风险。
+
+如果不用包装脚本，也可以在项目根目录直接运行 `hermes chat --cli`。关键是从项目根目录启动，让 Hermes 读取 `AGENTS.md`。
 
 MCP server 仍保留为兼容入口，但后续优先维护 Skill + 脚本入口。
 

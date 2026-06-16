@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /Users/zonghe/Downloads/piano_teacher
+exec hermes chat --cli "$@"

@@ -49,6 +49,25 @@ Hermes / 用户请求
 cd /Users/zonghe/Downloads/piano_teacher
 ```
 
+启动 Hermes CLI 对话：
+
+```bash
+scripts/start_hermes_piano_teacher_cli
+```
+
+然后直接自然语言对话，例如：
+
+```text
+准备 minimal-piano-fixture
+mock 听我练习 minimal-piano-fixture 前24个音 rough 模式
+查看 minimal-piano-fixture 的学习进度和计划
+请记住 minimal-piano-fixture：目标是慢速稳定，下次目标是保持当前速度完整弹奏
+```
+
+仓库中的 `AGENTS.md` 会指示 Hermes 在 CLI 对话中自动运行本地主控脚本，并把 JSON 结果整理成自然语言反馈。
+
+也可以直接调用主控脚本：
+
 准备曲目：
 
 ```bash
@@ -95,6 +114,14 @@ python3 -m app.main ask "查看 minimal-piano-fixture 的学习进度和计划"
 - `skills/score-import-reviewer`：谱面导入复核子 agent，用于检查 PDF/MusicXML 导入质量。
 
 `AGENTS.md` 会提示 Hermes/Codex 优先使用这些脚本式 Skill，而不是 MCP。MCP 兼容入口仍在 `scripts/piano_teacher_mcp`。
+
+如果不使用包装脚本，也可以在项目根目录直接启动：
+
+```bash
+hermes chat --cli
+```
+
+`scripts/start_hermes_piano_teacher_cli` 只是这个命令的便捷封装。
 
 ## 验证
 

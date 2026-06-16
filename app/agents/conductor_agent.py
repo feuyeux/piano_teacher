@@ -30,6 +30,15 @@ class ConductorAgent:
         lowered = text.lower()
         piece_id = self._detect_piece_id(text)
 
+        if self._has_any(lowered, ["help", "帮助", "能做什么", "怎么用"]):
+            return self._help_response(piece_id)
+
+        if self._has_any(lowered, ["记住", "remember", "更新老师记忆", "更新记忆", "记录一下", "学习成果"]):
+            if not piece_id:
+                raise ValueError("请指定要更新记忆的 piece_id 或曲名。")
+            memory_fields = self._extract_memory_fields(text)
+            return self.handle_command("update_teacher_memory", piece_id=piece_id, **memory_fields)
+
         if self._has_any(lowered, ["review", "复核", "检查", "导入"]) and self._has_any(lowered, ["pdf", "musicxml", "mxl", "琴谱", "谱"]):
             source_path = self._extract_path(text)
             if not source_path:
@@ -42,7 +51,7 @@ class ConductorAgent:
                 raise ValueError("请指定要准备的 piece_id 或曲名。")
             return self.handle_command("prepare_piece", piece_id=piece_id)
 
-        if self._has_any(lowered, ["refresh", "刷新", "更新曲库"]):
+        if self._has_any(lowered, ["refresh", "刷新", "更新曲库", "曲库", "有哪些曲子", "列出曲目"]):
             return self.handle_command("refresh_library")
 
         if self._has_any(lowered, ["memory", "进度", "画像", "成果", "计划"]) and self._has_any(lowered, ["show", "查看", "读取", "看"]):
@@ -179,8 +188,65 @@ class ConductorAgent:
         match = re.search(r"(/[^，。；\s]+(?:\.pdf|\.mxl|\.musicxml|\.xml|\.json))", text, flags=re.I)
         return match.group(1) if match else None
 
+    def _extract_memory_fields(self, text: str) -> dict:
+        current_goal = self._extract_after_marker(text, ["当前目标是", "目标是", "current goal is"])
+        next_goal = self._extract_after_marker(text, ["下次目标是", "下一步是", "next goal is", "next plan is"])
+        stage_label = self._extract_after_marker(text, ["阶段是", "stage is"])
+        focus_text = self._extract_after_marker(text, ["重点关注", "关注", "focus on"])
+        teacher_focus_tags = self._split_focus_tags(focus_text) if focus_text else None
+        return {
+            "note": text,
+            "stage_label": stage_label,
+            "current_goal": current_goal,
+            "next_goal": next_goal,
+            "teacher_focus_tags": teacher_focus_tags,
+        }
+
+    def _extract_after_marker(self, text: str, markers: list[str]) -> str | None:
+        lowered = text.lower()
+        end_tokens = ["。", "；", ";", "，", ",", "\n"]
+        for marker in markers:
+            index = lowered.find(marker.lower())
+            if index < 0:
+                continue
+            start = index + len(marker)
+            remainder = text[start:].strip(" ：:，,。;；")
+            end_positions = [remainder.find(token) for token in end_tokens if remainder.find(token) >= 0]
+            end = min(end_positions) if end_positions else len(remainder)
+            value = remainder[:end].strip(" ：:，,。;；")
+            return value or None
+        return None
+
+    def _split_focus_tags(self, text: str) -> list[str]:
+        import re
+
+        return [item for item in re.split(r"[\s,，、;；]+", text) if item]
+
     def _has_any(self, text: str, words: list[str]) -> bool:
         return any(word in text for word in words)
 
     def _latest_session(self, piece_id: str | None, statuses: set[str]) -> dict | None:
         return self.session_repo.latest_for_piece(piece_id=piece_id, statuses=statuses)
+
+    def _help_response(self, piece_id: str | None) -> dict:
+        return {
+            "status": "help",
+            "detected_piece_id": piece_id,
+            "capabilities": [
+                "刷新/列出曲库",
+                "准备或标准化曲目",
+                "开始练习",
+                "结束练习并分析 MIDI",
+                "mock 听练习并给反馈",
+                "查看学习进度和下一步计划",
+                "更新老师记忆/profile",
+                "复核 PDF/MusicXML 谱面导入",
+            ],
+            "examples": [
+                "准备 minimal-piano-fixture",
+                "mock 听我练习 minimal-piano-fixture 前24个音 rough 模式",
+                "查看 minimal-piano-fixture 的学习进度和计划",
+                "请记住 minimal-piano-fixture：目标是慢速稳定，重点关注 left_hand timing",
+                "复核琴谱 PDF /absolute/path/score.pdf",
+            ],
+        }

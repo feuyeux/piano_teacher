@@ -49,6 +49,25 @@ Run commands from the project root:
 cd /Users/zonghe/Downloads/piano_teacher
 ```
 
+Start a Hermes CLI conversation:
+
+```bash
+scripts/start_hermes_piano_teacher_cli
+```
+
+Then talk naturally, for example:
+
+```text
+准备 minimal-piano-fixture
+mock 听我练习 minimal-piano-fixture 前24个音 rough 模式
+查看 minimal-piano-fixture 的学习进度和计划
+请记住 minimal-piano-fixture：目标是慢速稳定，下次目标是保持当前速度完整弹奏
+```
+
+The repository `AGENTS.md` instructs Hermes to run the local conductor script for these requests and summarize the result.
+
+You can also call the conductor script directly:
+
 Prepare a piece:
 
 ```bash
@@ -95,6 +114,14 @@ The project includes three local skills:
 - `skills/score-import-reviewer`: score import review subagent for PDF/MusicXML quality checks.
 
 `AGENTS.md` tells Hermes/Codex to prefer these script-backed skills over MCP. MCP remains available through `scripts/piano_teacher_mcp` for compatibility.
+
+For the plain Hermes CLI workflow, start Hermes from this project root so `AGENTS.md` is loaded:
+
+```bash
+hermes chat --cli
+```
+
+`scripts/start_hermes_piano_teacher_cli` is a small convenience wrapper around that command.
 
 ## Validation
 

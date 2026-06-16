@@ -3,4 +3,8 @@ set -euo pipefail
 cd /Users/zonghe/Downloads/piano_teacher
 export PYTHONPATH=/Users/zonghe/Downloads/piano_teacher${PYTHONPATH:+:$PYTHONPATH}
 export PIANO_TEACHER_USE_HERMES_SUBAGENTS=1
-exec python3 -m app.main ask "$*"
+PYTHON_BIN="${PYTHON_BIN:-/usr/local/opt/python@3.11/libexec/bin/python3}"
+if [[ ! -x "$PYTHON_BIN" ]]; then
+  PYTHON_BIN="python3"
+fi
+exec "$PYTHON_BIN" -m app.main ask "$*"

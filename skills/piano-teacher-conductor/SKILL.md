@@ -5,7 +5,7 @@ description: Coordinate the local piano teacher practice system from natural lan
 
 # Piano Teacher Conductor
 
-Use the repository script entrypoint instead of MCP:
+In an interactive Hermes CLI session, run the repository script entrypoint yourself instead of telling the user to run it and instead of using MCP:
 
 ```bash
 scripts/hermes_piano_teacher "<natural language request>"
@@ -15,11 +15,14 @@ The conductor script enables Hermes subagents and delegates to `python3 -m app.m
 
 Common requests:
 
+- Help: `scripts/hermes_piano_teacher "你能做什么"`
+- Refresh/list library: `scripts/hermes_piano_teacher "列出曲库里有哪些曲子"`
 - Start practice: `scripts/hermes_piano_teacher "开始练习 minimal-piano-fixture"`
 - Mock listening: `scripts/hermes_piano_teacher "mock 听我练 minimal-piano-fixture 前32个音，rough 模式"`
 - Finish practice: `scripts/hermes_piano_teacher "结束 minimal-piano-fixture 练习，midi 在 /abs/path/performance_fixture.json"`
 - Prepare a score: `scripts/hermes_piano_teacher "准备 por-una-cabeza-feisi"`
 - View progress: `scripts/hermes_piano_teacher "查看 por-una-cabeza-feisi 的学习进度和计划"`
+- Update memory: `scripts/hermes_piano_teacher "请记住 por-una-cabeza-feisi：目标是慢速稳定右手旋律，下次目标是合手前复核第13小节，重点关注 right_hand timing"`
 - Review import: `scripts/hermes_piano_teacher "复核琴谱 PDF /abs/path/score.pdf"`
 
 Return the JSON result to the user in concise natural language. Mention generated paths for `session.json`, `analysis.json`, `feedback.json`, `score_import_review.json`, or profile files when relevant.
