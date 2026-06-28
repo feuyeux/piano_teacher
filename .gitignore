@@ -7,3 +7,20 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+
+# Runtime output and local practice data.
+sessions/
+profiles/*.json
+!profiles/minimal-piano-fixture.json
+!profiles/por-una-cabeza-feisi.json
+
+# New score imports are usually personal/local data. Existing tracked fixtures
+# remain tracked; use git add -f only for deliberate new fixtures.
+scores/*/
+!scores/minimal-piano-fixture/
+!scores/por-una-cabeza-feisi/
+scores/*/*.log
+
+# Recorder/runtime scratch files.
+midi_recorder.log
+midi_recorder_state.json

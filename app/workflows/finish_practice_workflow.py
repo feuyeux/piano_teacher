@@ -9,6 +9,7 @@ from app.services.alignment_service import AlignmentService
 from app.services.analysis_service import AnalysisService
 from app.services.feedback_service import FeedbackService
 from app.services.midi_parsing_service import MidiParsingService
+from app.services.midi_recording_service import MidiRecordingService
 from app.services.profile_service import ProfileService
 from app.utils.json_io import read_json, write_json
 from app.utils.time_utils import utc_now
@@ -18,6 +19,7 @@ class FinishPracticeWorkflow:
     def __init__(self, score_root: str | Path, session_root: str | Path, profile_root: str | Path) -> None:
         self.score_root = Path(score_root)
         self.session_repo = SessionRepository(session_root)
+        self.recording = MidiRecordingService(self.session_repo, session_root)
         self.piece_repo = PieceRepository(self.score_root / "piece_index.json")
         self.profile_service = ProfileService(ProfileRepository(profile_root))
         self.midi_parser = MidiParsingService()
@@ -27,6 +29,7 @@ class FinishPracticeWorkflow:
 
     def run(self, session_id: str, midi_log_path: str | None = None) -> dict:
         session = self.session_repo.load(session_id)
+        self.recording.stop(session_id)
         if midi_log_path:
             session["midi_log_path"] = midi_log_path
         if not session.get("midi_log_path"):
@@ -57,4 +60,3 @@ class FinishPracticeWorkflow:
         session["updated_at"] = utc_now()
         self.session_repo.save(session)
         return {"status": "completed", "session": session, "analysis": analysis, "profile": profile, "feedback": feedback}
-
