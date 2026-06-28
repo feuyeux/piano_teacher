@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /Users/zonghe/Downloads/piano_teacher
-export PYTHONPATH=/Users/zonghe/Downloads/piano_teacher${PYTHONPATH:+:$PYTHONPATH}
+
+# Dynamically determine project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+cd "$PROJECT_ROOT"
+export PYTHONPATH="$PROJECT_ROOT${PYTHONPATH:+:$PYTHONPATH}"
 export PIANO_TEACHER_DISABLE_MODEL_REVIEW=1
 exec python3 -m app.mcp_server
