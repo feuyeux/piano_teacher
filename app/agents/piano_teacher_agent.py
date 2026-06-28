@@ -51,6 +51,7 @@ class PianoTeacherAgent:
         score = analysis.get("overall_score")
         warnings = analysis.get("warnings", [])
         problem_measures = analysis.get("problem_measures", [])[:3]
+        theory_context = payload.get("theory_context") or []
 
         if problem_measures:
             first = problem_measures[0]
@@ -59,6 +60,9 @@ class PianoTeacherAgent:
             summary = f"这次《{piece.get('title', piece.get('piece_id', '这首曲子'))}》整体比较稳定。"
         if score is not None:
             summary += f" 结构化评分为 {score}。"
+        if theory_context:
+            topic = theory_context[0]
+            summary += f" 顺带用到一个乐理点：{topic.get('title')}，{topic.get('summary')}"
 
         key_issues = [
             {
@@ -72,6 +76,9 @@ class PianoTeacherAgent:
             {"step": step, "target": "连续三遍稳定后再进入下一步"}
             for step in (analysis.get("recommended_next_steps") or ["完整弹奏一遍并保持稳定速度。"])[:3]
         ]
+        if theory_context and len(practice_plan) < 3:
+            topic = theory_context[0]
+            practice_plan.append({"step": topic.get("practice_tip"), "target": f"能说出并弹出：{topic.get('title')}"})
         return {
             "summary": summary,
             "key_issues": key_issues,

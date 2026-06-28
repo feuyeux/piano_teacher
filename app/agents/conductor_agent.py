@@ -14,6 +14,7 @@ from app.repositories.profile_repository import ProfileRepository
 from app.repositories.piece_repository import PieceRepository
 from app.repositories.session_repository import SessionRepository
 from app.services.profile_service import ProfileService
+from app.services.theory_knowledge_service import TheoryKnowledgeService
 from app.utils.paths import project_root, slugify
 
 
@@ -25,6 +26,7 @@ class ConductorAgent:
         self.profile_root = self.settings.resolve(self.settings.profile_output_path)
         self.piece_repo = PieceRepository(self.score_root / "piece_index.json")
         self.session_repo = SessionRepository(self.session_root)
+        self.theory = TheoryKnowledgeService()
 
     def handle_natural_language(self, text: str) -> dict:
         lowered = text.lower()
@@ -32,6 +34,9 @@ class ConductorAgent:
 
         if self._has_any(lowered, ["help", "帮助", "能做什么", "怎么用"]):
             return self._help_response(piece_id)
+
+        if self._is_theory_question(lowered):
+            return self.handle_command("explain_theory", query=text)
 
         if self._has_any(lowered, ["记住", "remember", "更新老师记忆", "更新记忆", "记录一下", "学习成果"]):
             if not piece_id:
@@ -152,6 +157,8 @@ class ConductorAgent:
                 pdf_path=kwargs.get("pdf_path"),
                 musicxml_path=kwargs.get("musicxml_path"),
             )
+        if command == "explain_theory":
+            return self.theory.explain(kwargs["query"])
         raise ValueError(f"Unknown command: {command}")
 
     def _detect_piece_id(self, text: str) -> str | None:
@@ -225,6 +232,33 @@ class ConductorAgent:
     def _has_any(self, text: str, words: list[str]) -> bool:
         return any(word in text for word in words)
 
+    def _is_theory_question(self, lowered: str) -> bool:
+        theory_words = [
+            "乐理",
+            "节奏",
+            "拍子",
+            "节拍",
+            "时值",
+            "音程",
+            "音阶",
+            "调号",
+            "和弦",
+            "和声",
+            "乐句",
+            "连奏",
+            "断奏",
+            "力度",
+            "踏板",
+            "theory",
+            "rhythm",
+            "interval",
+            "scale",
+            "chord",
+            "harmony",
+        ]
+        question_words = ["什么", "怎么", "解释", "讲", "说说", "为什么", "how", "what", "explain"]
+        return self._has_any(lowered, theory_words) and self._has_any(lowered, question_words)
+
     def _latest_session(self, piece_id: str | None, statuses: set[str]) -> dict | None:
         return self.session_repo.latest_for_piece(piece_id=piece_id, statuses=statuses)
 
@@ -239,6 +273,7 @@ class ConductorAgent:
                 "结束练习并分析 MIDI",
                 "mock 听练习并给反馈",
                 "查看学习进度和下一步计划",
+                "讲解基础乐理并给练习提示",
                 "更新老师记忆/profile",
                 "复核 PDF/MusicXML 谱面导入",
             ],
@@ -246,6 +281,7 @@ class ConductorAgent:
                 "准备 minimal-piano-fixture",
                 "mock 听我练习 minimal-piano-fixture 前24个音 rough 模式",
                 "查看 minimal-piano-fixture 的学习进度和计划",
+                "讲一下节奏和拍子",
                 "请记住 minimal-piano-fixture：目标是慢速稳定，重点关注 left_hand timing",
                 "复核琴谱 PDF /absolute/path/score.pdf",
             ],

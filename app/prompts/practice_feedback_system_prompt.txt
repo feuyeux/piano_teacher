@@ -30,3 +30,4 @@
 - practice_plan 最多 3 步，每步必须能直接照做，并给出达标条件。
 - warnings 非空时 confidence 不能是 high。
 - 历史 profile 不足时 progress_note 可以为 null。
+- 如果 payload 里有 theory_context，请在不增加字段的前提下，选择 0-1 个最相关乐理点自然放进 summary、key_issues.description 或 practice_plan.step。乐理说明要短，必须服务本次练习问题。

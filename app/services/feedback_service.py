@@ -4,6 +4,7 @@ import os
 
 from app.config import Settings
 from app.agents.piano_teacher_agent import PianoTeacherAgent
+from app.services.theory_knowledge_service import TheoryKnowledgeService
 from app.utils.paths import project_root
 
 
@@ -13,6 +14,7 @@ class FeedbackService:
         prompt_path = project_root() / "app" / "prompts" / "practice_feedback_system_prompt.txt"
         review_command = os.getenv("PIANO_TEACHER_FEEDBACK_COMMAND") or settings.practice_feedback_command
         self.teacher = PianoTeacherAgent(prompt_path=prompt_path, review_command=review_command)
+        self.theory = TheoryKnowledgeService()
 
     def generate(self, piece: dict, session: dict, analysis: dict, profile: dict | None) -> dict:
         return self.teacher.generate_feedback(
@@ -30,5 +32,6 @@ class FeedbackService:
                 },
                 "analysis": analysis,
                 "profile": profile,
+                "theory_context": self.theory.for_practice_context(analysis),
             }
         )

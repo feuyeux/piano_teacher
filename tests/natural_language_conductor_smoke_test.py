@@ -61,6 +61,11 @@ def main() -> int:
     assert help_result["status"] == "help"
     assert "更新老师记忆/profile" in help_result["capabilities"]
 
+    theory = run_command("ask", "讲一下节奏和拍子")
+    assert theory["status"] == "theory_answer"
+    assert theory["topics"]
+    assert "节拍" in theory["answer"] or "节奏" in theory["answer"]
+
     print(
         json.dumps(
             {
